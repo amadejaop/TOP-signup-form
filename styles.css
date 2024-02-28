@@ -5,7 +5,7 @@ body, html {
 }
 
 .image {
-    background-image: url("./coffee.jpg");
+    background-image: url("./mountain.jpg");
     background-size: cover;
     height: 100vh;
     flex: 1;
@@ -23,6 +23,19 @@ body, html {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     margin-top: 20vh;
+    justify-content: center;
+    font-family: "Skranji", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.credit {
+    font-size: 0.7rem;
+    margin: 10px auto;
+}
+
+.credit > a {
+    color: white;
 }
 
 .white {
