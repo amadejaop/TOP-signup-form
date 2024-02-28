@@ -1,3 +1,35 @@
-body {
-    background-color: pink;
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.image {
+    background-image: url("./coffee.jpg");
+    background-size: cover;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content {
+    flex: 2;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 20vh;
+}
+
+.white {
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
