@@ -1,32 +1,17 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: Norse;
+    src: url("./fonts/norse-kawl-webfont.woff") format("woff"),
+    url("./fonts/norse-kawl-webfont.woff2") format("woff2");
 }
 
-.image {
-    background-image: url("./mountain.jpg");
-    background-size: cover;
-    height: 100vh;
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
     flex: 2;
-}
-
-.title {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin-top: 20vh;
-    justify-content: center;
-    font-family: "Skranji", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
 }
 
 .credit {
@@ -38,11 +23,36 @@ body, html {
     color: white;
 }
 
-.white {
-    color: white;
+.image {
+    background-image: url("https://images.unsplash.com/photo-1605190587727-519a8020dbf6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
 }
 
 main {
     display: flex;
+}
+
+.title {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    font-family: Norse, sans-serif;
+    font-size: 60px;
+    height: 80px;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.title img {
+    margin-right: 10px;
+}
+
+.white {
+    color: white;
 }
 
