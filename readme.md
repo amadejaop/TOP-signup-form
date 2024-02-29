@@ -1,5 +1,7 @@
 # Sign up form
 
+Available on [GitHub Pages](https://amadejaop.github.io/TOP-signup-form/).
+
 This project is a part of the Odin Project series. For more information [check out the project page with instructions](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
 
 ## Table of contents
