@@ -6,17 +6,34 @@
 
 body, html {
     box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
     padding: 0;
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+button[type="submit"] {
+    background-color: #7e710d;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 5px 5px  10px rgba(150, 150, 150, 0.7);
+    color: wheat;
+    font-size: 1.01rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 0.5rem 2rem;      
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .content {
-    flex: 2;
     background-color: #f5f7f4;
-    padding: 0;
+    flex: 2;
     margin: 0;
-    
+    padding: 0;
 }
 
 .credit {
@@ -38,21 +55,8 @@ body, html {
     text-decoration: none;
 }
 
-button[type="submit"] {
-    background-color: #7e710d;
-    color: wheat;
-    font-weight: bold;
-    font-size: 1.01rem;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 7px;
-    box-shadow: 5px 5px  10px rgba(150, 150, 150, 0.7);
-    margin-bottom: 15px;
-}
-
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .form {
@@ -62,6 +66,10 @@ button:hover {
     overflow: hidden;
     padding: 0 5vh 3vh 5vh;
 }
+
+/* .form p {
+    margin-bottom: 0px;
+} */
 
 .image {
     background-image: url("https://images.unsplash.com/photo-1605190587727-519a8020dbf6?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -73,12 +81,33 @@ button:hover {
     justify-content: space-between;
 }
 
+input {
+    display: block;
+}
+
+.input_items {
+    gap: 25px 3vw;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+label {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+/*     padding-top: 30px;
+ */    text-transform: uppercase;
+}
+
 main {
     display: flex;
 }
 
 .text {
     font-weight: bold;
+    max-width: 60ch;
     min-height: 25vh;
     overflow: hidden;
     padding: 10vh 5vh 0 5vh;
