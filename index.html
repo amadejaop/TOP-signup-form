@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./scripts.js"></script>
 </head>
 <body>
     <main>
@@ -25,23 +26,23 @@
                 <p>Let's do this!</p>
                 <form action="" method="POST">
                     <div class="input_items">
-                        <label for="first">First name <input type="text" id="first" name="first_name" ></label>
+                        <label for="first">First name <input type="text" id="first" name="first_name" minlength="3" ></label>
                         
 
-                        <label for="last">Last name <input type="text" id="last" name="last_name" ></label>
+                        <label for="last">Last name <input type="text" id="last" name="last_name" minlength="3" ></label>
                         
 
-                        <label for="email">Email <input type="email" id="email" name="user_email" ></label>
+                        <label for="email">Email <input type="email" id="email" name="user_email" required></label>
                         
 
                         <label for="phone">Phone number <input type="tel" id="phone" name="user_phone"></label>
                         
 
-                        <label for="pwd">Password <input type="password" id="pwd" name="user_pass"></label>
+                        <label for="pwd">Password <input type="password" id="pwd" name="user_pass" class="error" required></label>
                         
 
-                        <label for="pwdconf">Confirm password <input type="password" id="pwdconf" name="user_pass_confirm"></label>
-                        
+                        <label for="pwdconf">Confirm password <input type="password" id="pwdconf" name="user_pass_confirm" class="error" required></label>
+                        <span id="pwdmatch">* Passwords do not match!</span>
                     </div>
                 </div>
                 <div class="footer">
