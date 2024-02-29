@@ -7,8 +7,12 @@ window.onload = function() {
 
     function checkPasswords() {
         if (password.value === confirmPassword.value) {
+            password.classList.remove('error');
+            confirmPassword.classList.remove('error');
             errorMessage.style.visibility = "hidden";
         } else {
+            password.classList.add('error');
+            confirmPassword.classList.add('error');
             errorMessage.style.visibility = "visible";
         }
     }
